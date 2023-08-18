@@ -2,10 +2,10 @@
 home: true
 layout: BlogHome
 icon: home
-title: Blog Home
+title: 首页
 heroImage: /logo.svg
-heroText: The name of your blog
-tagline: You can put your slogan here
+heroText: 范图曼的博客
+tagline: 每一天都是新的练习
 heroFullScreen: true
 projects:
   - icon: project

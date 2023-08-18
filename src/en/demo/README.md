@@ -1,5 +1,5 @@
 ---
-title: 特性演示
+title: Features demo
 index: false
 icon: laptop-code
 category:

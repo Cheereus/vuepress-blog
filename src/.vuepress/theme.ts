@@ -17,7 +17,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/Cheereus/vuepress-blog",
 
   docsDir: "src",
 
@@ -61,10 +61,10 @@ export default hopeTheme({
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
+      navbar: zhNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: zhSidebar,
 
       footer: "Default footer",
 
@@ -83,12 +83,12 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/en/": {
       // navbar
-      navbar: zhNavbar,
+      navbar: enNavbar,
 
       // sidebar
-      sidebar: zhSidebar,
+      sidebar: enSidebar,
 
       footer: "默认页脚",
 
@@ -96,7 +96,7 @@ export default hopeTheme({
 
       blog: {
         description: "一个前端开发者",
-        intro: "/zh/intro.html",
+        intro: "/en/intro.html",
       },
 
       // page meta
