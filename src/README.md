@@ -4,9 +4,9 @@ layout: BlogHome
 icon: home
 title: 首页
 heroImage: /logo.svg
+footer: <img src="/beian.png" style="float:left;"/><a href="https://beian.miit.gov.cn/"/>鄂ICP备2020022304号</a>
 heroText: 范图曼的博客
 tagline: 每一天都是新的练习
-heroFullScreen: true
 projects:
   - icon: project
     name: project name
@@ -38,7 +38,6 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: customize your footer text
 ---
 
 This is a blog home page demo.
