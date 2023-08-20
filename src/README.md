@@ -3,6 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 首页
+hero: false
 heroImage: /logo.svg
 footer: <img src="/beian.png" style="float:left;"/><a href="https://beian.miit.gov.cn/"/>鄂ICP备2020022304号</a>
 heroText: 范图曼的博客
