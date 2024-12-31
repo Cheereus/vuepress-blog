@@ -34,7 +34,6 @@ jobs:
         echo "${{ secrets.SECRET_KEY }}" > ~/.ssh/id_rsa
         chmod 400 ~/.ssh/id_rsa
         ssh-keyscan ${{ secrets.HW_CLOUD }} >> ~/.ssh/known_hosts
-        ssh ${{ secrets.HW_USER }}@${{ secrets.HW_CLOUD }} 'rm -rf /home/blog/dist';
         scp -r ./src/.vuepress/dist ${{ secrets.HW_USER }}@${{ secrets.HW_CLOUD }}:/home/blog/
 
         
