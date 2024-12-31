@@ -28,13 +28,13 @@ jobs:
       run: |
         npm install
         npm run docs:build
+    - name: Deploy to server
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SECRET_KEY }}" > ~/.ssh/id_rsa
+        chmod 400 ~/.ssh/id_rsa
+        ssh-keyscan ${{ secrets.HW_CLOUD }} >> ~/.ssh/known_hosts
+        ssh ${{ secrets.HW_USER }}@${{ secrets.HW_CLOUD }} 'rm -rf /home/blog/dist';
+        scp -r ./src/.vuepress/dist ${{ secrets.HW_USER }}@${{ secrets.HW_CLOUD }}:/home/blog/
 
-    - name: deploy file to server
-      uses: wlixcc/SFTP-Deploy-Action@v1.0 
-      with:  
-        username: 'root'
-        server: '${{ secrets.HW_CLOUD }}'
-        ssh_private_key: ${{ secrets.SECRET_KET }}
-        local_path: './src/.vuepress/dist'
-        remote_path: '/home/blog/'
         
