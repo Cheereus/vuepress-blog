@@ -6,7 +6,7 @@ title: 首页
 hero: false
 heroImage: /logo.svg
 footer: <img src="/beian.png" style="float:left;"/><a href="https://beian.miit.gov.cn/"/>皖ICP备2024071933号</a>
-heroText: 范图曼的博客
+heroText: 每一天都是新的练习
 tagline: 每一天都是新的练习
 projects:
   - icon: project
